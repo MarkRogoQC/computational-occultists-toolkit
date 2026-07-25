@@ -1,0 +1,16 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "computational-occultists-toolkit"
+version = "0.1.0"
+description = "72-band frequency analysis toolkit for temporal, symbolic, and event decomposition"
+requires-python = ">=3.10"
+dependencies = ["pyephem>=4.2.1"]
+
+[project.scripts]
+cot = "cotk.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
